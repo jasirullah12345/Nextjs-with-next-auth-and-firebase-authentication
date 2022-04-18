@@ -64,7 +64,9 @@ const BaseLayout = (props) => {
             <NavbarTop navState={navState} setNavState={setNavState}/>
 
             <div className={"m-4 p-4 shadow rounded-lg scrollbar bg-white"}>
-                {children}
+                <div className={"min-h-[calc(100vh-210px)]"}>
+                    {children}
+                </div>
             </div>
 
             <Footer/>
