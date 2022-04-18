@@ -8,7 +8,7 @@ const Logout = () => {
     const signOutUser = async () => {
         const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
         await signOut({
-            callbackUrl: `${BASE_URL}/login`
+            callbackUrl: BASE_URL
         })
     }
 
