@@ -10,8 +10,7 @@ const Index = ({user}) => {
         {user ? (<>
             <br/><br/>Role : {user.role} <br/><br/>
             <button className={"bg-red-800 rounded py-2 px-4 text-white"} onClick={() => signOut()}>Sign out</button>
-            <div className={"min-h-[calc(100vh-210px)]"}>
-                <div className={"flex flex-wrap gap-3 justify-center"}>
+            <div className={"flex flex-wrap gap-3 justify-center"}>
                     <Card title="Total Events" Icon={EventNoteOutlinedIcon} value={23} path={"/event"}/>
                     <Card title="Total Events" Icon={EventNoteOutlinedIcon} value={23} path={"/event"}/>
                     <Card title="Total Events" Icon={EventNoteOutlinedIcon} value={23} path={"/event"}/>
@@ -21,7 +20,6 @@ const Index = ({user}) => {
                     <Card title="Total Events" Icon={EventNoteOutlinedIcon} value={23} path={"/event"}/>
                     <Card title="Total Events" Icon={EventNoteOutlinedIcon} value={23} path={"/event"}/>
                 </div>
-            </div>
         </>) : (<>
             <button className={"bg-blue-800 rounded py-2 px-4 text-white"} onClick={() => signIn()}>Sign in</button>
         </>)}
