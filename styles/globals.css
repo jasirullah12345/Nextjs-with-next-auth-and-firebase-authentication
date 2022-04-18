@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+
+    /* Scroll thumb styles */
+    .scrollbar::-webkit-scrollbar {
+        width: .45rem;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-indigo-200;
+        border-radius: 1rem;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        @apply bg-indigo-300;
+    }
+
+    /* Scroll track styles (Background) */
+    .scrollbar::-webkit-scrollbar-track {
+        @apply bg-white;
+        border-radius: 4px;
+    }
+
+    /* Scroll thumb styles */
+    .scrollbarDark::-webkit-scrollbar {
+        width: .45rem;
+    }
+
+    .scrollbarDark::-webkit-scrollbar-thumb {
+        @apply bg-indigo-400;
+        border-radius: 1rem;
+    }
+
+    .scrollbarDark::-webkit-scrollbar-thumb:hover {
+        @apply bg-indigo-500;
+    }
+
+    /* Scroll track styles (Background) */
+    .scrollbarDark::-webkit-scrollbar-track {
+        @apply bg-white;
+        border-radius: 4px;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #F8F8F8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
